@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Avocado;
+    src: url("estilo/LTAvocado-Regular.ttf") format('truetype'), url(LTAvocado-Bold.ttf)
+    format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor01:#D5AF28;
+    --cor02:#AA923C;
+    --cor03:#FFC905;
+    --cor04:#807242;
+    --cor05:#554F3A;
+
+    --font01: Avocado, Arial;
+}
+
+*{
+    background-color: var(--cor01);
+    margin: 0px;
+    padding: 0px;
+    font-family:var(--font01)
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding-inline: 5px;
+}
+
+header > h1{
+    position: relative;;
+    background-color: white;
+    text-align: center;
+}
+header > img{
+    padding-right: 5%;
+    padding-left: 5px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    background-color: white;
+}
